@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: hello
+  cloud:
+    consul:
+      discovery:
+        instanceId: localhost:8500
+  config:
+    import: "consul:"

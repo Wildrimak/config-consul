@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: api-profile
+  config:
+    import: 'optional:consul:'
+  cloud:
+    consul:
+      config:
+        enabled: true
+        prefix: my-network
+        defaultContext: '${spring.application.name}'

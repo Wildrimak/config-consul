@@ -23,10 +23,10 @@ import java.util.Optional;
 @SpringBootApplication
 public class LearningConsulApplication {
 
-	@Value("${hello/hello-world}")
+	@Value("${hello-world}")
 	private String variable;
 
-	@Value("${hello.variable}")
+	@Value("${variable}")
 	private String other;
 
 	@Autowired

@@ -5,6 +5,8 @@ spring:
     import: 'optional:consul:'
   cloud:
     consul:
+      host: localhost
+      port: 8510
       config:
         enabled: true
         prefix: my-network
